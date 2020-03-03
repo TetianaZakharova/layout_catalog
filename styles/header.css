@@ -1,0 +1,59 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 50px;
+  padding: 0 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  .header__logoImg {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle; }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .header .nav__item-link {
+      padding: 23px 0;
+      margin-right: 20px;
+      position: relative;
+      text-decoration: none;
+      line-height: 14px;
+      font-style: normal;
+      color: #000; }
+    .header .nav__item-link:hover,
+    .header .nav .is-active {
+      color: #00acdc; }
+    .header .nav .is-active::after {
+      content: "";
+      position: absolute;
+      border-radius: 8px;
+      background-color: #00acdc;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 4px; }
+    .header .nav__item-link:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=header.css.map */
