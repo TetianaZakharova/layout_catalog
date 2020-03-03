@@ -5,9 +5,7 @@
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 403px);
   gap: 50px 48px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  margin: 0 auto; }
 
 .card {
   width: 200px;
@@ -16,8 +14,6 @@
   background: #ffff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .card:hover {
@@ -62,8 +58,6 @@
       padding-top: 1px;
       padding-left: 1px; }
       .card__rating__rating-stars .rating-star {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
         width: 15px;
         height: 15px;
         margin-right: 4px;
