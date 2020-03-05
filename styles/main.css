@@ -99,12 +99,14 @@
     margin-bottom: 45px;
     padding: 14px 0;
     border: 3px solid transparent;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    -webkit-transition: border, border-radius, ease-in-out, -webkit-transform 1s;
+    transition: border, border-radius, ease-in-out, -webkit-transform 1s;
+    transition: transform 1s, border, border-radius, ease-in-out;
+    transition: transform 1s, border, border-radius, ease-in-out, -webkit-transform 1s; }
     .card__img:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
-      border: 2px solid #f3f3f3;
+      border: 3px solid #f3f3f3;
       border-radius: 5px;
       cursor: pointer; }
   .card__name {
