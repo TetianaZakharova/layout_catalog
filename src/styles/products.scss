@@ -4,14 +4,12 @@
   max-width: 944px;
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 403px);
   gap: 50px 48px;
   margin: 0 auto;
 }
 
 .card {
   width: 200px;
-  height: 403px;
   padding: 14px;
   background: #ffff;
   border: 1px solid #f3f3f3;
