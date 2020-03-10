@@ -8,7 +8,6 @@
       -ms-flex-align: center;
           align-items: center;
   grid-template-columns: auto auto;
-  max-width: 1200px;
   margin: 0 auto 50px;
   padding: 0 50px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
