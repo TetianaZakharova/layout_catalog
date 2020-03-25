@@ -1,8 +1,9 @@
 @import "./variables.scss";
 
 .header {
-  @include flex-align-center;
-  justify-content: space-between;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
   margin: 0 auto 50px;
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -14,20 +15,21 @@
   }
 
   .nav {
-    @include flex-align-center;
+    display: grid;
+    grid-template-columns: repeat(8,  auto);
+    grid-column-gap: 20px;
     @extend %font-size12-weight500;
     text-transform: uppercase;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: end;
 
     &__item-link {
       padding: 23px 0;
-      margin-right: 20px;
       position: relative;
       text-decoration: none;
       line-height: 14px;
       font-style: normal;
       color: #000;
+      transition: color 0.2s ease-in-out;
     }
 
     &__item-link:hover,

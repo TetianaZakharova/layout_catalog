@@ -4,15 +4,13 @@
   max-width: 944px;
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 403px);
   gap: 50px 48px;
   margin: 0 auto;
 }
 
 .card {
   width: 200px;
-  height: 403px;
-  padding: 30px 14px 14px;
+  padding: 14px;
   background: #ffff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -26,6 +24,19 @@
     @include flex-align-center;
     justify-content: center;
     margin-bottom: 45px;
+    padding: 14px 0;
+    border: 3px solid transparent ;
+    transition: transform 1s,
+      border,
+      border-radius,
+      ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   }
 
   &__name {
@@ -96,10 +107,14 @@
     height: 40px;
     border-radius: 5px;
     justify-content: center;
-    transition: all 0.2s ease-in-out;
+    transition: background-color,
+      color,
+      border,
+      border-radius,
+      0.5s ease-in-out;
 
     &:hover {
-      background: #fff;
+      background-color: #fff;
       border: 1px solid $blueColor;
       border-radius: 5px;
       color: $blueColor;
